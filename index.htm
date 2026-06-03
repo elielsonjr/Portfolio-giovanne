@@ -3,110 +3,307 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giovanne Bahia | Agronomia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Portfólio profissional de Giovanne Bahia, estudante graduando de Engenharia Agronômica. Especialista em agricultura de precisão, mapeamento com drones e cultivo sustentável." />
+  <title>Giovanne Bahia | Agronomia & Tecnologia Agrícola</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Animated Leaves & Pollen Container -->
   <div id="leaves-container"></div>
 
-  <div class="content">
-    <header>
-      <div class="level-badge">Estudante de Eng. Agronoma</div>
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <i class="fas fa-seedling"></i>
+        <span>GIOVANNE BAHIA</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">Sobre Mim</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Alternar Tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="content" id="main-content">
+    
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+      <div class="hero-badge">Graduando em Engenharia Agronômica</div>
       <h1>GIOVANNE BAHIA</h1>
-      <p class="tagline">"Cultivando soluções sustentáveis para o futuro da agricultura"</p>
-      <div class="social">
-        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:giovanne@email.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+      <p class="typing-text" id="typing-text">"Cultivando soluções sustentáveis para o futuro da agricultura"</p>
+      
+      <div class="hero-socials">
+        <a href="#" target="_blank" aria-label="LinkedIn" id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram" id="social-instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:giovanne@email.com" aria-label="E-mail" id="social-email"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">Ver Projetos</a>
+        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Entrar em Contato</a>
       </div>
     </header>
 
     <div class="container">
-      <section class="about">
-        <h2 class="title">SOBRE MIM</h2>
-        <p>Sou Giovanne Bahia, estudante de Agronomia no 7º período, apaixonado por agricultura sustentável e inovações no campo. Minha trajetória acadêmica e experiências práticas me permitiram desenvolver habilidades tanto no cultivo tradicional quanto nas mais recentes tecnologias agrícolas.</p>
-        <p>Acredito no equilíbrio entre produtividade e preservação ambiental, buscando sempre soluções que beneficiem tanto o agricultor quanto o ecossistema.</p>
-      </section>
-
-      <section class="experience">
-        <h2 class="title">EXPERIÊNCIAS</h2>
-        <div class="xp-item">
-          <div class="xp-header">
-            <span class="xp-title">Estagiário em Agricultura de Precisão</span>
-            <span class="xp-period">03/2023 - Presente</span>
-          </div>
-          <span class="xp-company">AgroTech Soluções Rurais</span>
-          <p class="xp-desc">Atuação no mapeamento de áreas agrícolas utilizando drones, análise de solo e aplicação de insumos com taxa variável. Participação em projetos de irrigação inteligente e monitoramento de culturas.</p>
-          <div class="skills">
-            <span class="skill"><i class="fas fa-drone"></i> Drones Agrícolas</span>
-            <span class="skill"><i class="fas fa-map"></i> Georreferenciamento</span>
-            <span class="skill"><i class="fas fa-tint"></i> Irrigação</span>
-          </div>
+      
+      <!-- About Me Section -->
+      <section id="about" class="reveal">
+        <div class="section-header">
+          <h2 class="title">SOBRE MIM</h2>
         </div>
-        <div class="xp-item">
-          <div class="xp-header">
-            <span class="xp-title">Assistente de Pesquisa</span>
-            <span class="xp-period">08/2022 - 12/2022</span>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Sou Giovanne Bahia, estudante de Agronomia no 7º período, apaixonado por agricultura sustentável e inovações no campo. Minha trajetória acadêmica e experiências práticas me permitiram desenvolver habilidades tanto no cultivo tradicional quanto nas mais recentes tecnologias agrícolas.</p>
+            <p>Acredito fielmente no equilíbrio entre a alta produtividade e a preservação ambiental, buscando sempre o desenvolvimento de soluções técnicas que tragam benefícios econômicos aos produtores e respeitem o ecossistema.</p>
           </div>
-          <span class="xp-company">Universidade Federal</span>
-          <p class="xp-desc">Pesquisa sobre resistência de cultivares às mudanças climáticas. Coleta e análise de dados sobre crescimento vegetal em diferentes condições ambientais.</p>
-          <div class="skills">
-            <span class="skill"><i class="fas fa-seedling"></i> Fitotecnia</span>
-            <span class="skill"><i class="fas fa-flask"></i> Pesquisa</span>
-            <span class="skill"><i class="fas fa-chart-line"></i> Análise de Dados</span>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">7º</span>
+              <span class="stat-label">Período</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Anos de Prática</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projetos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Ferramentas</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="skills">
-        <h2 class="title">HABILIDADES</h2>
-        <div class="skills">
-          <span class="skill"><i class="fas fa-tractor"></i> Mecanização Agrícola</span>
-          <span class="skill"><i class="fas fa-seedling"></i> Fitotecnia</span>
-          <span class="skill"><i class="fas fa-leaf"></i> Fitopatologia</span>
-          <span class="skill"><i class="fas fa-flask"></i> Pesquisa Agrícola</span>
-          <span class="skill"><i class="fas fa-chart-line"></i> Análise de Dados</span>
+      <!-- Skills Section -->
+      <section id="skills" class="reveal">
+        <div class="section-header">
+          <h2 class="title">HABILIDADES</h2>
+        </div>
+        <div class="skills-container">
+          <!-- Category 1 -->
+          <div class="skill-category">
+            <h3><i class="fas fa-drone"></i> Agric. de Precisão</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Drones Agrícolas</span>
+                  <span class="skill-pct" data-pct="90">90%</span>
+                </div>
+                <div class="progress-line"><span data-width="90%"></span></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Georreferenciamento</span>
+                  <span class="skill-pct" data-pct="85">85%</span>
+                </div>
+                <div class="progress-line"><span data-width="85%"></span></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">QGIS & Análise NDVI</span>
+                  <span class="skill-pct" data-pct="80">80%</span>
+                </div>
+                <div class="progress-line"><span data-width="80%"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category">
+            <h3><i class="fas fa-tractor"></i> Manejo & Campo</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Fitotecnia</span>
+                  <span class="skill-pct" data-pct="85">85%</span>
+                </div>
+                <div class="progress-line"><span data-width="85%"></span></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Sistemas de Irrigação</span>
+                  <span class="skill-pct" data-pct="80">80%</span>
+                </div>
+                <div class="progress-line"><span data-width="80%"></span></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Mecanização Agrícola</span>
+                  <span class="skill-pct" data-pct="75">75%</span>
+                </div>
+                <div class="progress-line"><span data-width="75%"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category">
+            <h3><i class="fas fa-flask"></i> Ciência & Pesquisa</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Análise de Solo</span>
+                  <span class="skill-pct" data-pct="85">85%</span>
+                </div>
+                <div class="progress-line"><span data-width="85%"></span></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Análise de Dados</span>
+                  <span class="skill-pct" data-pct="80">80%</span>
+                </div>
+                <div class="progress-line"><span data-width="80%"></span></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name">Fitopatologia</span>
+                  <span class="skill-pct" data-pct="70">70%</span>
+                </div>
+                <div class="progress-line"><span data-width="70%"></span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="education">
-        <h2 class="title">FORMAÇÃO</h2>
-        <p><i class="fas fa-graduation-cap"></i> Bacharelado em Agronomia (7º período) - Universidade Federal</p>
-        <p><i class="fas fa-certificate"></i> Técnico em Agropecuária - Escola Agrotécnica</p>
+      <!-- Experience Section -->
+      <section id="experience" class="reveal">
+        <div class="section-header">
+          <h2 class="title">EXPERIÊNCIAS</h2>
+        </div>
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="xp-header">
+                <span class="xp-title">Estagiário em Agricultura de Precisão</span>
+                <span class="xp-company">AgroTech Soluções Rurais</span>
+                <span class="xp-period">03/2023 - Presente</span>
+              </div>
+              <p class="xp-desc">Atuação no mapeamento de áreas agrícolas utilizando drones, análise de solo e aplicação de insumos com taxa variável. Participação em projetos de irrigação inteligente e monitoramento de culturas.</p>
+              <div class="skills">
+                <span class="skill"><i class="fas fa-drone"></i> Drones Agrícolas</span>
+                <span class="skill"><i class="fas fa-map"></i> Georreferenciamento</span>
+                <span class="skill"><i class="fas fa-tint"></i> Irrigação</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="xp-header">
+                <span class="xp-title">Assistente de Pesquisa</span>
+                <span class="xp-company">Universidade Federal</span>
+                <span class="xp-period">08/2022 - 12/2022</span>
+              </div>
+              <p class="xp-desc">Pesquisa sobre resistência de cultivares às mudanças climáticas. Coleta e análise de dados sobre crescimento vegetal em diferentes condições ambientais.</p>
+              <div class="skills">
+                <span class="skill"><i class="fas fa-seedling"></i> Fitotecnia</span>
+                <span class="skill"><i class="fas fa-flask"></i> Pesquisa</span>
+                <span class="skill"><i class="fas fa-chart-line"></i> Análise de Dados</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="projects">
-        <h2 class="title">PROJETOS</h2>
+      <!-- Projects Section -->
+      <section id="projects" class="reveal">
+        <div class="section-header">
+          <h2 class="title">PROJETOS</h2>
+        </div>
         <div class="projects-grid">
+          <!-- Project 1 -->
           <div class="project-card">
-            <h3><i class="fas fa-drone"></i> Mapeamento com Drones</h3>
-            <p>Projeto de mapeamento aéreo de áreas cultivadas para identificação de variações no desenvolvimento vegetal.</p>
-            <div class="project-meta">
-              <span><i class="fas fa-map-marked-alt"></i> Agric. de Precisão</span>
-              <span><i class="fas fa-calendar"></i> 2023</span>
+            <div class="project-img-wrapper">
+              <img src="assets/drone_mapping.png" alt="Mapeamento com Drones" class="project-img" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3><i class="fas fa-drone"></i> Mapeamento com Drones</h3>
+              <p>Projeto de mapeamento aéreo de áreas cultivadas para identificação de variações no desenvolvimento vegetal e aplicação de insumos em taxa variável.</p>
+              <div class="project-meta">
+                <span><i class="fas fa-map-marked-alt"></i> Agric. de Precisão</span>
+                <span><i class="fas fa-calendar"></i> 2023</span>
+              </div>
             </div>
           </div>
+
+          <!-- Project 2 -->
           <div class="project-card">
-            <h3><i class="fas fa-seedling"></i> Cultivares Resistentes</h3>
-            <p>Pesquisa sobre desenvolvimento de cultivares resistentes a seca em condições controladas.</p>
-            <div class="project-meta">
-              <span><i class="fas fa-flask"></i> Pesquisa</span>
-              <span><i class="fas fa-calendar"></i> 2022</span>
+            <div class="project-img-wrapper">
+              <img src="assets/cultivares_resistentes.png" alt="Cultivares Resistentes" class="project-img" />
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3><i class="fas fa-seedling"></i> Cultivares Resistentes</h3>
+              <p>Pesquisa laboratorial sobre desenvolvimento e teste de cultivares adaptados a condições extremas de estresse hídrico e variações climáticas.</p>
+              <div class="project-meta">
+                <span><i class="fas fa-flask"></i> Pesquisa Científica</span>
+                <span><i class="fas fa-calendar"></i> 2022</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="reveal">
+        <div class="section-header">
+          <h2 class="title">CONTATO</h2>
+        </div>
+        <div class="contact-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Nome</label>
+              <input type="text" id="contact-name" name="name" placeholder="Seu nome completo" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">E-mail</label>
+              <input type="email" id="contact-email" name="email" placeholder="seu.email@exemplo.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Mensagem</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Olá Giovanne, gostaria de conversar sobre..." required></textarea>
+            </div>
+            <button type="submit" id="contact-submit-btn">
+              <span>Enviar Mensagem</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
     </div>
 
+    <!-- Footer -->
     <footer>
-      <p>Portfólio de Giovanne Bahia &copy; 2025</p>
+      <p>Portfólio de Giovanne Bahia &copy; 2026</p>
       <div class="credits">
-        <p>Desenvolvido por <a href="https://elielsonjr.github.io/portfolio/" target="_blank">Elielson Junior</a></p>
+        <p>Desenvolvido por <a href="https://elielsonjr.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Elielson Junior</a></p>
       </div>
     </footer>
-  </div>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
